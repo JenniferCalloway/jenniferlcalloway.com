@@ -1,0 +1,157 @@
+.jumbotron {
+	background-image: url('images/skyline.jpg');
+	background-position: 64% 1%;
+	background-repeat: no-repeat;
+	height: 400px;
+}
+
+.jumbotron .circle {
+	margin: auto;
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	background-color: rgba(255, 210, 8, .7);
+}
+
+.circle span {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.8em;
+	line-height: 1.3em;
+	position: relative;
+	top: 25%;
+	left: 12%;
+	color: #333;
+
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+body {
+	background-color: #eee;
+}
+
+
+.content {
+	background-color: #fff;
+}
+
+
+.title h4 {
+	text-align: center;
+	color: #666;
+	font-weight: normal;
+}
+
+.title {
+	border-bottom: 2px dotted #ccc;
+	padding: 15px 0 5px 0;
+	margin: 10px auto;
+	width: 85%;
+
+}
+
+.title:last-of-type {
+	margin-top: 40px;
+}
+
+
+.project {
+	margin: 20px 0;
+}
+
+.project img {
+	border: 1px solid #444;
+	margin-left: 8%;
+}
+
+.about {
+	margin: 0 auto;
+}
+
+.icon {
+	padding: 25px;
+}
+
+.icon img {
+	display: block;
+	margin: 0 auto;
+	padding-right: 30px;
+}
+
+
+.icon h5, .icon p {
+
+	text-align: center;
+	max-width: 80%;
+	margin: 15px 0 0 30px;
+	color: #777;
+}
+
+.icon h5 {
+	margin-top: 25px;
+}
+
+.end {
+	background-color: #2E2E2E;
+	color: #fff;
+	height: 70px;
+	margin: 0px;
+	padding-top: 25px;
+
+}
+
+.links {
+	text-align: center;
+}
+
+.links span {
+	padding-right: 4.5%;
+}
+
+.links a {
+	color: #fff;
+	padding: 0 1.5%;
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+	.jumbotron {
+		height: 300px;
+		background-position: 24% 1%;
+	}
+
+	.jumbotron .circle {
+		height: 250px;
+		width: 250px;
+		margin-top: -3%;
+	}
+
+	.circle span {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.jumbotron {
+		height: 250px;
+		background-position: 24% 1%;
+	}
+
+	.jumbotron .circle {
+		height: 200px;
+		width: 200px;
+		margin-top: -2%;
+	}
+
+	.circle span {
+		font-size: 1.3em;
+	}
+}

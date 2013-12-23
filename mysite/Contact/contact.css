@@ -1,0 +1,62 @@
+.container {
+	margin-top: 0;
+}
+
+.navbar: {
+	font-size: 14px;
+}
+
+.content {
+	height: 500px;
+	border-radius: 0 0 4px 4px;
+}
+
+h3 {
+	padding: 25px;
+	color: #777;
+}
+
+.content ul {
+	list-style-type: none;
+	margin: 20px 0 0 0;
+	font-size: 16px;
+}
+
+.labels li {
+	margin-left: 25px;
+	padding: 10px;
+	
+}
+
+.labels li:last-of-type:before {
+	content: url('images/linkedin.png');
+	padding-right: 5px;
+}
+
+.contact_info li {
+	padding: 10px 0;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+	.labels {
+		display: none;
+	}
+
+	.contact_info {
+		margin-left: 25px;
+	}
+
+	.contact_info li:last-of-type:before {
+	content: url('images/linkedin.png');
+	padding-right: 5px;
+
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.contact_info {
+		margin-left: 15px !important;
+	}
+}

@@ -1,0 +1,73 @@
+.container {
+	margin-top: 0;
+}
+
+.navbar: {
+	font-size: 14px;
+}
+
+
+.content {
+	border-radius: 0 0 4px 4px;
+	margin-bottom: 50px;
+}
+
+h3 {
+	padding: 25px;
+	color: #777;
+}
+
+.coming-soon {
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+.coming-soon img {
+	margin: 20px 0;
+}
+
+.coming-soon span {
+	display: block;
+	color: #ccc;
+	font-size: 36px;
+	padding-bottom: 20px;
+}
+
+.project {
+	border-bottom: 1px dashed #ccc;
+	float: left;
+	padding-bottom: 25px;
+	margin-left: 25px;
+
+}
+
+.project:last-of-type {
+	border: none;
+}
+
+.project a {
+	float: left;
+}
+
+.text {
+	color: #444;
+	float: left;
+	margin: 60px 0 0 40px;
+}
+
+.text p {
+	max-width: 750px;
+}
+
+
+
+
+@media only screen and (max-width: 1199px) {
+	.text {
+		margin: 25px 25px 0 25px;
+	}
+}
+
+
+
+

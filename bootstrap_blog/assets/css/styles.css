@@ -1,0 +1,17 @@
+.nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
+	background-color: red;
+}
+
+header {
+	background: #eee;
+}
+
+h1.title {
+	text-align: center;
+	margin: 50px 0;
+}
+
+footer {
+	background: #eee;
+	margin-top: 50px;
+}

@@ -1,0 +1,463 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 980px; 
+	margin: 0 auto;
+	font-family: 'Karla', sans-serif;
+	color: #333;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*******************/
+	/* Header */
+/*******************/
+
+.header:after {
+	content:"";
+	height:0;
+	display:block;
+	visibility:hidden;
+	clear:both;
+}
+
+.header {
+	background: #79CDCD; 
+	border-bottom: 5px solid #5F9EA0;}
+
+.header .branding-title {
+	float: left; 
+	font-size: 46px; 
+	font-family: 'Lily Script One', cursive; 
+	text-shadow: none; 
+	height:77px; 
+	padding: 15px 0 0 0;
+}
+
+.header .branding-title a {
+	display: block; 
+	color: #FFFFF0; 
+	height: 77px; 
+	padding-top: 6px; 
+	text-decoration: none;
+}
+
+.header .branding-title a:hover {
+	color: #F5F5DC;
+}
+
+.header .nav {
+	float: right; 
+	top: 0; right: 0; 
+	position: relative; 
+	left: 10px; 
+	z-index: 99999999;
+}
+
+.header .nav li {
+	display: inline-block; 
+	margin: 5px 0; 
+	list-style: none;
+}
+
+.header .nav li.cart {
+	padding: 5px 35px 40px 35px;
+	margin-left: 64px; 
+	border: 0 dashed #5F9EA0; 
+	border-width: 0 2px; 
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+.header .nav li .cart-image {
+	position: relative;
+	top: 15px;
+}
+
+.header .nav li input:focus {
+	outline: none;
+}
+
+.header .nav li.cart a:hover {
+	background-position: 16px -321px;
+}
+
+.header .nav li a {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding-top: px;
+    line-height: 95px;
+    margin: 0 0 0 50px;
+    width: 90px;
+    text-align: right;
+    text-transform: uppercase;
+    white-space: nowrap; 
+}
+.header .nav li.on a {
+	text-decoration: underline;
+}
+
+.header .nav li a:hover, .header .nav li a:active {
+	color: #F5F5DC;
+}
+
+.header .nav li.shirts a {
+	background-position: 0px 0px;
+}
+
+.header .nav li.contact a {
+	background-position: 0px -105px;
+}
+
+.header .nav li.cart a {
+    width: 122px;
+    font-size: 0/95px serif;
+    text-shadow: none;
+    color: transparent;
+    background-position: 16px -216px;
+    margin: 0;
+}
+
+.header .nav li.cart a:hover {
+	background-position: 16px -321px;
+}
+
+
+/*******************/
+	/* Footer */
+/*******************/
+
+.footer {
+	height: 70px;
+	background: #CBCAB6;
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+	color: #555;
+	margin-top: 80px;
+}
+
+.footer li {
+	float: left;
+	margin: 25px 0 0 20px;
+	list-style-type: none;
+}
+
+.footer li a {
+	text-decoration: none;
+	color: #3299CC;
+}
+
+.footer li a:hover {
+	text-decoration: underline;
+}
+
+
+.footer p {
+	float: right;
+	margin: 25px 20px 0 0;
+}
+
+
+
+/*******************/
+	/* Homepage */
+/*******************/
+
+.banner {
+	background-color: #FCFFF0;
+	height: 373px;
+	position: relative;
+}
+
+.coverphoto {
+	position: relative;
+	height: 373px;
+	background-image: url("../img/pillows.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 3px;
+}
+
+.coverphoto .insert {
+	position: absolute;
+	left: 282px;
+	top: 110px;
+}
+
+
+.content {
+	margin: 100px 0 60px;
+}
+
+.bri-pic {
+	float: left;
+	width: 40%;
+}
+
+.overview {
+	float: right;
+	width: 60%;
+}
+
+
+.overview h1 {
+	padding: 50px 0 10px;
+	text-align: center;
+}
+
+.overview p {
+	
+	padding: 10px 0;
+}
+
+
+.new h2 {
+	padding: 20px 0 10px;
+	text-align: center;
+}
+
+.new hr {
+	border: 1px dashed #999;
+	margin: 0 0 20px;
+}
+
+.featured-pillow {
+	float: left;
+	height: 250px;
+	width: 250px;
+	border: 2px solid #777;
+	margin: 10px 35px 20px 35px;
+
+}
+
+
+/*******************/
+	/* Pillows */
+/*******************/
+
+.pillows h2 {
+	padding: 90px 0  50px;
+	text-align: center;
+	font-size: 2.2em;
+}
+
+.pillows .products {
+	width: 960px;
+}
+
+.pillows .products li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #e3e1e0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width: 250px;
+    height: 260px;
+    text-align: center;
+    text-transform: lowercase;
+    padding: 14px;
+    background: #f0eeed;
+    float: left;
+    margin: 10px 15px 50px 15px;
+}
+
+.pillows .products li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+.pillows .products li a:hover {
+    opacity: 1;
+    color: #666;
+}
+
+.pillows .products li a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+.pillows .products li a:visited:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+
+.pillows ul.products li img {
+    width: 250px;
+    height: 250px;
+}
+.pillows ul.products li p {
+    width: auto;
+}
+
+
+/**********************/
+/* Individual Pillow */
+/**********************/
+
+
+.breadcrumb {
+	margin: 30px 0;
+}
+
+.pillow-details {
+	margin: 20px 0;
+}
+
+.pillow-details form {
+	margin: 15px 0;
+}
+
+.pillow-details p {
+	padding: 10px 0;
+}
+
+
+
+/**********************/
+     /* Contact */
+/**********************/
+
+.error input, .error textarea {
+	border: 2px solid #D44942;
+}
+
+.tooltip {
+	background: #D44942;
+	color: #fff;
+	font-size: 12px;
+	padding: 4px;
+	position: absolute;
+	left: 358px;
+	top: 4px;
+}
+
+.tooltip:before {
+	content: "";
+	border: 7px solid #D44942;
+	border-color: transparent #D44942 transparent transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: -14px;
+	bottom: 4px;
+}
+
+.tooltip2 {
+	background: #D44942;
+	color: #fff;
+	font-size: 12px;
+	padding: 4px;
+	position: absolute;
+	left: 560px;
+	top: 4px;
+}
+
+.tooltip2:before {
+	content: "";
+	border: 7px solid #D44942;
+	border-color: transparent #D44942 transparent transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: -14px;
+	bottom: 4px;
+}
+
+
+.thanks {
+	display: inline-block;
+	margin: 60px 0 425px;
+	font-size: 18px;
+}
+
+.contact h1 {
+	padding: 25px 0;
+}
+
+.contact form {
+	margin: 15px 0 200px;
+}
+
+.contact .field {
+	margin: 25px 0;
+	width: 800px;
+	position: relative;
+}
+
+.contact label {
+	float: left;
+	text-align: right;
+	margin: 0 0 0 25px;
+	width: 100px;
+}
+
+.contact input {
+	width: 200px;
+	height: 30px;
+	margin: 0 0 0 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-color: #FCFFF0;
+}
+
+.contact input:focus {
+	outline: 2px solid rgba(0, 0, 0, .3);
+}
+
+
+.contact textarea {
+	width: 400px;
+	font-size: 14px;
+	min-height: 150px;
+	margin: 0 0 0 15px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 10px;
+	background-color: #FCFFF0;
+}
+
+.contact textarea:focus {
+	outline: 2px solid rgba(0, 0, 0, .3);
+}
+
+.contact .submit {
+	width: 150px;
+	margin: 20px 0 10px 140px;
+	background-color: #93DB70;
+	font-weight: bold;
+	color: #333;
+	cursor: hand;
+}
+
+.contact .submit:active {
+	outline: none;
+}

@@ -1,0 +1,387 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 600px;
+	font-family: 'Helvetica', sans-serif;
+	color: #222;
+	font-size: 16px;
+}
+
+
+.game {
+	margin: 0 auto 90px auto;
+	position: static;
+	text-align: center;
+}
+
+.game:first-child {
+	margin-top: 50px;
+}
+
+h1 {
+	padding: 50px 0;
+}
+
+button {
+	width: 140px;
+	height: 30px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin: 0 25px;
+	background-color: #ddd;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ccc;
+}
+
+button:focus {
+	outline: none;
+}
+
+
+/********************/
+	 /*Snowman*/
+/********************/
+.snowscene {
+	background-image: url('img/snow-background.png');
+	background-position: cover;
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 462px;
+	position: relative;
+}
+
+.snowscene .bottom-circle {
+	height: 140px;
+	width: 140px;
+	background-color: white;
+	border: 1px solid #999;
+	border-radius: 46%;
+	position: absolute;
+	top: 260px;
+	left: 235px;
+	display: none;
+}
+
+.snowscene .middle-circle {
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	border: 1px solid #999;
+	border-radius: 47%;
+	position: absolute;
+	top: 165px;
+	left: 253px;
+	display: none;
+}
+
+.snowscene .top-circle {
+	height: 65px;
+	width: 65px;
+	background-color: white;
+	border: 1px solid #999;
+	border-radius: 47%;
+	position: absolute;
+	top: 100px;
+	left: 270px;
+	display: none;
+}
+
+.snowscene .hat {
+	height: 100px;
+	width: 100px;
+	background-image: url('img/hat.png');
+	position: absolute;
+	top: 26px;
+	left: 242px;
+	z-index: 9999;
+	display: none;
+}
+
+.snowscene .arms {
+	width: 300px;
+	height: 250px;
+	background-image: url('img/arms.png');
+	background-position: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 60px;
+	left: 168px;
+	z-index: 9999;
+	display: none;
+}
+
+.snowscene .face {
+	width: 50px;
+	height: 46px;
+	background-image: url('img/snowman-face.png');
+	background-position: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 115px;
+	left: 290px;
+	z-index: 9999;
+	display: none;
+}
+
+
+/********************/
+   /*Lightswitch*/
+/********************/
+
+.window {
+	width: 600px;
+	height: 402px;
+	background-image: url('img/livingroom.png');
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.dark {
+	width: 600px;
+	height: 402px;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: absolute;
+	top: 930px;
+}
+
+.frame {
+	width: 600px;
+	height: 402px;
+	background-image: url('img/windowframe.png');
+	position: absolute;
+	top: 930px;
+	z-index: 9999;
+}
+
+.switch {
+  display: block;
+  position: relative;
+ 	width: 70px;
+  height: 100px;
+  margin: 50px auto 25px;
+  
+  border-radius: 50px;
+  background: #e6e3da;
+  background: linear-gradient(#e6e3da, #fff);
+  border: 1px solid rgba(0,0,0,0.1);
+  
+  box-shadow: 
+    inset 0 7px 0 #fdfdfd,
+    0 2px 3px rgba(170, 160, 140,.3);
+  
+  cursor: pointer;
+}
+
+.switch:before {
+ 	content: "";
+  position: absolute;
+  top: -10px; bottom: -10px;
+  left: -5px; right: -5px;
+  z-index: -1;
+  
+  background: #f2f1ed;
+  border-radius: inherit;
+  
+  box-shadow:
+    0 1px 1px rgba(#aea391,0.2),
+    0 3px 3px rgba(170, 160, 140, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.8),
+    0 0 5px rgba(170, 160, 140, 0.5);
+}
+
+.switch:after {
+ 	content: "";
+  position:absolute; 
+  width: 60px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: -1;
+  left: 18px;
+  top: 10px;
+  background: linear-gradient(160deg, rgba(170, 160, 140, 0.7), rgba(170, 160, 140, 0));
+  background: -webkit-linear-gradient(290deg, rgba(170, 160, 140, 0.75), rgba(170, 160, 140, 0));
+
+  -webkit-filter: blur(1px);
+}
+
+#switch {
+ 	clip: rect(0 0 0 0);
+  position: absolute;
+  visibility: hidden;
+}
+
+#switch:checked ~ .switch {
+ 	background: linear-gradient(#f7f6f4, #fff);
+  box-shadow:
+    inset 0 -5px 0 #dbd3c8,
+    0 6px 5px rgba(170, 160, 140, 0.75),
+    3px 16px 5px rgba(170,160,140, 0.3);
+  border-bottom: none;
+}
+
+#switch:checked ~ .switch:after {
+  display: none;
+}
+
+
+/********************/
+     /*Carousel*/
+/********************/
+
+#carousel-container {
+	margin: 0 auto 20px;
+	border: 2px solid #666;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+.flickr-carousel h5 {
+	margin-bottom: 30px;
+}
+
+#strip {
+	position: relative;
+	width: 9000px;
+	-webkit-transition: left 2s;
+  	-moz-transition: left 2s;
+}
+
+.flickr-carousel img {
+	float: left;
+}
+
+
+
+
+
+
+/********************/
+     /*Change*/
+/********************/
+
+#output {
+	border: 2px solid #eee;
+	padding: 5px;
+	margin: 30px 0 0 0;
+	min-height: 50px;
+}
+
+
+/********************/
+  /*Movie Ranking*/
+/********************/
+
+
+.list ol {
+	margin: 35px 18%;
+}
+
+.list li {
+	height: 30px;
+	width: 400px;
+	background: #B7C3D0;
+	margin: 10px 0;
+	padding: 5px 0 0;
+	line-height: 25px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.list li:active {
+	background: #9FB6CD;
+	cursor: pointer;
+}
+
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  margin-right: 0px;
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-title {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 32px;
+}
+
+.modal-body img {
+	display: block;
+	margin: 0 auto;
+}
+
+.modal-body p {
+	text-align: center;
+	padding: 40px 0 0;
+	font-size: 20px;
+}
+
+.modal-footer button {
+	background: #4F94CD;
+	font-size: 18px;
+	height: 35px;
+	color: #eee;
+	text-shadow: 1px 1px #333;
+}
+
+.modal-footer button:hover {
+	background: #4682B4;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

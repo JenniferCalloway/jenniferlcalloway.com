@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			
+			function printName(nameToPrint, ageToPrint) {
+				alert("My name is " + nameToPrint + " and I am " + ageToPrint + " years old.");
+
+			}
+
+			$('#printMessage').click(function(){
+				var name;
+				var age;
+
+				name = $('#name').val();
+				age = $('#age').val();
+
+				printName("sldkflsdkf", age);
+					
+			});
+
+		});
+	</script>
+
+</head>
+
+<body>
+	<h1>Javascript Testing</h1>
+	
+	<label>Type your name</label>
+	<input type="text" id="name">
+
+	<label>Type your age</label>
+	<input type="text" id="age">
+
+	<button id="printMessage">submit</button>
+	
+</body>
+</html>

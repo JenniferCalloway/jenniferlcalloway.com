@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<title>JS Games</title>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="game">
+			<div class="snowman">
+				<h1>Build a Snowman</h1>
+				<div class="snowscene">
+					<div class="hat"></div>
+					<div class="face"></div>
+					<div class="arms"></div>
+					<div class="top-circle"></div>
+					<div class="middle-circle"></div>
+					<div class="bottom-circle"></div>
+				</div>
+				<button id="#snowman">Build!</button>
+				<span class="instructions">Click the button to build your snowman!</span>
+			</div>
+		</div>	
+
+		<div class="game">
+			<div class="lightswitch">
+				<h1>Lights On, Lights Off</h1>
+				<div class="window"></div>
+				<div class="dark"></div>
+				<div class="frame"></div>
+				<input type="checkbox" name="switch" id="switch">
+				<label class="switch" for="switch"><!--<span></span>--></label>
+				<span class="instructions">Click the switch to turn the light on and off.</span>
+			</div>
+		</div>
+
+		<div class="game">
+			<div class="flickr-carousel">
+				<h1>Latest photos posted to Flickr</h1>
+				<div id="carousel-container">
+					<div id="strip"></div>
+				</div>
+				<h5>*Warning - these images are pulled directly from Flickr and may contain questionable content!</h5>
+				<button id="play">Play</button>
+				<button id="stop">Stop</button>
+				<button id="new-images">Pull new images!</button>
+			</div>
+		</div>
+
+		<div class="game">
+			<div class="change">
+				<h1>Here's Your Change</h1>
+				<label>Amount in cents:</label>
+				<input type="text" id="cents">
+				<button id="print-change">Enter</button>
+				<div id="output"></div>
+			</div>
+		</div>
+		
+		<div class="game">
+			<div class="ranking">
+				<h1>Movie Ranking</h1>
+				<div class="list">
+					<span>Drag the movie titles to rank them according to your preference.</span>
+					<ol>
+						<li>Adaptation</li>
+						<li>Moonstruck</li>
+						<li>Gone In Sixty Seconds</li>
+						<li>Con Air</li>
+						<li>Raising Arizona</li>
+						<li>Ghost Rider: Spirit of Vengance</li>
+					</ol>
+				</div>
+				<button id="movies" data-toggle="modal" data-target="#myModal">Submit</button>
+				<span class="instructions">Submit your list to see if your ranking is up to snuff!</span>	
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!-- Movie Ranking Modal -->
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="myModalLabel">Nicholas Cage says...</h4>
+	      </div>
+	      <div class="modal-body cf">
+	        <img src="img/cage.jpg" alt="nicholas cage">
+	        <p class="nicsays">Nice job!  I totally agree, all of my movies are incredible.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" id="modal-button" class="btn btn-default" data-dismiss="modal">Sweet!</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="snowman.js" type="text/javascript"></script>
+<script src="window.js" type="text/javascript"></script> 
+<script src="carousel.js" type="text/javascript"></script>
+<script src="change.js" type="text/javascript"></script>
+<script src="ranking.js" type="text/javascript"></script>
+
+
+</body>
+</html>
