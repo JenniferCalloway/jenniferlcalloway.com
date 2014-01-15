@@ -188,8 +188,9 @@
 /*******************/
 
 .banner {
+	background: url("../img/burlap.jpg") repeat-x;
 	background-color: #FCFFF0;
-	height: 373px;
+	height: 374px;
 	position: relative;
 }
 
